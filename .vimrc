@@ -11,6 +11,7 @@ set softtabstop=4
 set expandtab
 set number
 set relativenumber
+set visualbell
 syntax enable
 filetype indent on
 filetype plugin indent on
@@ -18,10 +19,6 @@ filetype plugin indent on
 "set smaller indent width for c files
 autocmd Filetype c setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd Filetype cpp setlocal shiftwidth=2 tabstop=2 softtabstop=2
-
-"highlight and unhighlight search matches
-set hlsearch
-nnoremap <leader><space> :nohlsearch<CR>
 
 "visual movement
 nnoremap j gj
@@ -33,6 +30,10 @@ nnoremap <S-j> <C-e>
 nnoremap <S-k> <C-y>
 nnoremap <C-j> <S-j>
 nnoremap <C-k> <S-k>
+
+"highlight and unhighlight search matches
+set hlsearch
+nnoremap <leader><space> :nohlsearch<CR>
 
 "enable pathogen package manager
 execute pathogen#infect()
