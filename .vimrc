@@ -2,7 +2,7 @@
 "23 Dec 19
 
 "set leader
-"let mapleader=","
+let mapleader=","
 
 "set basic editor settings
 set shiftwidth=4
